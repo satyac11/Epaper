@@ -1,9 +1,7 @@
 import React, { useRef, useState } from "react";
 import Navbar from "./Navbar";
-import Login from "./Login";
 import Footer from "./Footer";
 import ImageCarousel from "./ImageCarousel";
-import Screenshot from "./Screenshot";
 import "./App.css";
 import SocialIcons from "./SocialIcons";
 import NavigationButtons from "./NavigationButtons";
@@ -17,7 +15,7 @@ function App() {
     "/images/page-1.jpg",
     "/images/page-2.jpg",
     "/images/page-3.jpg",
-    "/images/page-4.jpg"
+    "/images/page-4.jpg",
   ];
 
   const goToPrevious = () => {
