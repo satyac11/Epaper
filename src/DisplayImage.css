@@ -1,0 +1,13 @@
+.image-container {
+  width: calc(100% - 60px); /* Adjust the width to account for the margins */
+  margin: 0 20px; /* Add left and right margins */
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  object-fit: cover;
+}

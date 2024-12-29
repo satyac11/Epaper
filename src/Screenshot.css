@@ -1,0 +1,27 @@
+.screenshot-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.screenshot-button, .crop-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.screenshot-button:hover, .crop-button:hover {
+  background-color: #0056b3;
+}
+
+.cropper-container {
+  margin-top: 20px;
+}
+
+.cropped-image-container {
+  margin-top: 20px;
+}

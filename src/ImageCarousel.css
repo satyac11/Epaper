@@ -1,0 +1,41 @@
+.carousel-container {
+  width: calc(100% - 40px); /* Adjust the width to account for the margins */
+  margin: 0 20px; /* Add left and right margins */
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  margin-bottom: 60px; /* Add margin to the bottom to ensure buttons are visible */
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 300px; /* Adjust the min-height to ensure enough space for buttons */
+  object-fit: cover;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1.5em;
+  border-radius: 5px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
