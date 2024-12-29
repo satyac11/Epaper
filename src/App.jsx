@@ -17,6 +17,7 @@ function App() {
     "/images/page-1.jpg",
     "/images/page-2.jpg",
     "/images/page-3.jpg",
+    "/images/page-4.jpg"
   ];
 
   const goToPrevious = () => {
