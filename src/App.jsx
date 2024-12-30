@@ -12,28 +12,37 @@ function App() {
   const screenshotRef = useRef(null);
 
   const images = [
-    "/images/page-1.jpg",
-    "/images/page-2.jpg",
-    "/images/page-3.jpg",
-    "/images/page-4.jpg",
+    "/images/page-0001.jpg",
+    "/images/page-0002.jpg",
+    "/images/page-0003.jpg",
+    "/images/page-0004.jpg",
   ];
 
   const goToPrevious = () => {
     const isFirstImage = currentIndex === 0;
     const newIndex = isFirstImage ? images.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
+    scrollToTop();
   };
 
   const goToNext = () => {
     const isLastImage = currentIndex === images.length - 1;
     const newIndex = isLastImage ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
+    scrollToTop();
   };
 
   const handleScreenshot = () => {
     if (screenshotRef.current) {
       screenshotRef.current.takeScreenshot();
     }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
