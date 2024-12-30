@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="/">Kandanaole Times</a>
+        <a href="/">Kandanavolu Times</a>
       </div>
       <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
         <a href="/">Home</a>
